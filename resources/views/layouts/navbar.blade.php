@@ -29,7 +29,7 @@
                 <a class="nav-link active" href="{{ route('ejercicio_cuatro') }}">Ejercicio 4</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link active" href="#">Ejercicio 5</a>
+                <a class="nav-link active" href="{{ route('ejercicio_cinco') }}">Ejercicio 5</a>
             </li>
             </ul>
         </div>

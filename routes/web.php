@@ -5,6 +5,7 @@ use App\Http\Controllers\EjercicioUnoController;
 use App\Http\Controllers\EjercicioDosController;
 use App\Http\Controllers\EjercicioTresController;
 use App\Http\Controllers\EjercicioCuatroController;
+use App\Http\Controllers\EjercicioCincoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,7 @@ Route::get('/', [EjercicioUnoController::class, 'index'])->name('ejercicio_uno')
 Route::get('/dos', [EjercicioDosController::class, 'index'])->name('ejercicio_dos');
 Route::get('/tres', [EjercicioTresController::class, 'index'])->name('ejercicio_tres');
 Route::get('/cuatro', [EjercicioCuatroController::class, 'index'])->name('ejercicio_cuatro');
+Route::get('/cinco', [EjercicioCincoController::class, 'index'])->name('ejercicio_cinco');
 
 //rutas de recursos
 //Route::resource('/ejercicio_uno',EjercicioUnoController::class);
@@ -30,3 +32,4 @@ Route::get('/cuatro', [EjercicioCuatroController::class, 'index'])->name('ejerci
 //rutas post
 Route::post('/ejercicio_uno', [EjercicioUnoController::class, 'store'])->name('ejecicioUno.store');
 Route::post('/ejercicio_dos', [EjercicioDosController::class, 'importar'])->name('ejecicioDos.importar');
+Route::post('/ejercicio_cinco', [EjercicioCincoController::class, 'store'])->name('ejecicioCinco.upload');
